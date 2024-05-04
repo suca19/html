@@ -11,39 +11,201 @@
 
     <link rel="icon" href="images/gatito.jpeg" type="image/x-icon">
 
-    
+    <style>
+        body {
+            background-color: rgb(119, 163, 180);
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+        }
+
+        #my-first-article {
+            background-color: rgb(103, 17, 17);
+        }
+    </style>
 </head>
 
 <body>
 
+    <video src="https" controls autoplay loop muted></video>
+    <audio src="https" controls autoplay loop muted></audio>
     <h1>Carlos Portfolio</h1>
 
-    <p>First time coding in <strong>html</strong> </p>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
 
-<!--My comment-->
+            <li>
+                <a href="#my-name">My Work</a>
+            </li>
 
-    <ul>
-        <li class="my-first-class">
-            <a href="My Work.html">My Work</a>
-        </li>
+            <li>
+                <a href="https://github.com/suca19" target="_blank">My Github</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <p>First time coding in <strong>html</strong> </p>
 
-        <li class="my-first-class">
-            <a href="About Me.html">About Me</a>
-        </li>
+        <!--My comment-->
 
-    </ul>
+        <a download href="images/gatito.jpeg">
 
-    <img 
-    id="michi"
-    width="300"
-    height="300"
-    title=" image of a michi" 
-    src="images/gatito.jpeg" 
-    alt="michi"
-    >
+            <img id="michi" width="300" height="300" title=" image of a michi" src="images/gatito.jpeg" alt="michi">
 
-    <p>My name is Carlos and I am a web developer</p>
+        </a>
 
-</body>
+        <p>My name is Carlos and I am a web developer</p>
+
+        <h2>My Skills</h2>
+
+        <aside>
+            <ol type="1" reversed start="10">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </aside>
+
+        <button>Click me</button>
+
+        <div role="alert">
+            <p>My first time coding in html</p>
+        </div>
+
+        <section>
+
+            <div class="my-first-article">
+                <article>
+                    <header>
+
+                        <h1>HTML</h1>
+                        <p>HTML is the standard markup language for creating Web pages.</p>
+
+                    </header>
+
+                    <h3> Sitio Web</h3>
+                    <p>Un sitio web es un conjunto de páginas web relacionadas y comunes a un dominio de internet o
+                        subdominio en la World Wide Web en Internet.</p>
+
+                    <h3>HTML</h3>
+                    <p>HTML is the standard markup language for creating Web pages.</p>
+
+
+
+
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Often Question</h2>
+
+            <details>
+                <summary>What is HTML?</summary>
+                <p>HTML is the standard markup language for creating Web pages.</p>
+            </details>
+
+        </section>
+        <br>
+
+        <section>
+
+            <form method="post" action="index.html">
+                <fieldset>
+                    <legend>Formulario</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="juanito">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50"
+                        placeholder="Write your message here"></textarea>
+                    <br>
+                    <labe for="tel">Phone:</labe>
+                    <input type="tel" id="tel" name="tel" placeholder="353862708764" pattern="">
+                    <br>
+                    <datalist id="languages">
+                        <option value="HTML"></option>
+                        <option value="CSS"></option>
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                        <option value="Java"></option>
+                    </datalist>
+                    <label for="browsers">Choose a language:</label>
+                    <input list="languages" name="languages">
+                    <br>
+                    <button type="submit">Submit</button>
+
+                </fieldset>
+            </form>
+
+
+        </section>
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <aside>
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Play video games</li>
+            <li>Read books</li>
+            <li>Watch movies</li>
+        </ul>
+
+    </aside>
+
+    <footer>
+        <p>&copy; 2020 Carlos</p>
+        <p id="my-name">Carlos</p>
+
+        <a href="carlos.enrique.suca@gmail.com">send me an email</a>
+        <a href="tel:+353862708764">Call me</a>
+        <a href="whatsapp://send?text=Hello perro como estas?&phone=353862708764">Send me a message to whatsapp</a>
+
+    </footer>
+
+    <img style="width: auto; aspect-ratio: 638/317;" loading="lazy" src="images/tesla.jpeg" alt="tesla" width="300"
+        height="300">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9zeCDt46Ez4?si=zQWs2g-YFt9YIdMm"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <dialog id="showModal">
+            <h1>Dialog</h1>
+            <p>My first dialog</p>
+            <button>Close</button>
+        </dialog>
+        <button id="openButton">Open dialog</button>
+        
+        <script>
+           window.openButton.addEventListener('click', () => {
+               window.showModal.showModal();
+           });
+              window.showModal.querySelector('button').addEventListener('click', () => {
+                window.showModal.close();
+              });
+        </script>
+        
+    </body>
 
 </html>
