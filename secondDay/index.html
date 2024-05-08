@@ -15,6 +15,27 @@
 </head>
 
 <body>
+    <!--this is a navigator-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+
+
+    <section>
+        <ul>
+            <a href="#html">Technologies I like </a>
+        </ul>
+        <ul>
+            <a href="#descript">Technologies I might like </a>
+        </ul>
+
+    </section>
+
+    <hr>
+
     <h1>Hello World!</h1>
 
     <hr>
@@ -45,59 +66,90 @@
 
     <hr>
 
-    <!---hello this is a comment-->
-    <!--this is a list not numbered-->
-    <h3>Technologies i like</h3>
+    <section id="html">
+        <!---hello this is a comment-->
+        <!--this is a list not numbered-->
+        <h3>Technologies i like</h3>
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>MongoDB</li>
-    </ul>
-
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+        </ul>
+    </section>
     <!--this is a list numbered-->
-    <h3>Technologies i might like</h3>
-    <ol>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C#</li>
-        <li>PHP</li>
-        <li>SQL</li>
-        <li>Angular</li>
-        <li>Vue</li>
-    </ol>
+    <section>
+        <h3>Technologies i might like</h3>
+        <ol>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>Angular</li>
+            <li>Vue</li>
+        </ol>
+    </section>
     <hr>
     <!--this is a description list-->
-    <dl>
-        <dt>HTML</dt>
-        <dd>Hyper Text Markup Language</dd>
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets</dd>
-        <dt>JavaScript</dt>
-        <dd>JavaScript is a programming language that conforms to the ECMAScript specification.</dd>
-        <dt>React</dt>
-        <dd>React is a JavaScript library for building user interfaces.</dd>
-        <dt>Node.js</dt>
-        <dd>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
-            engine and executes JavaScript code outside a web browser.</dd>
 
-    </dl>
+    <section id="descript">
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>JavaScript</dt>
+            <dd>JavaScript is a programming language that conforms to the ECMAScript specification.</dd>
+            <dt>React</dt>
+            <dd>React is a JavaScript library for building user interfaces.</dd>
+            <dt>Node.js</dt>
+            <dd>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+                engine and executes JavaScript code outside a web browser.</dd>
 
+        </dl>
+    </section>
     <hr>
-
-    <!--this is a navigator-->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
+    <table>
+        <caption>   
+            My Schedule
+        </caption>
+        <thead><tr>
+            <th>
+                time
+            </th>
+            <th>
+                task    
+            </th>
+        </tr>
+        </thead>
+        <tr>
+            <td>
+                <time datetime="2024-09-01">8am</time>-<time datetime="2024-09-30">9am</time>
+            </td>
+            <td>Write Code</td>
+        </tr>
+        <tr>
+            <td>
+                <time datetime="2024-09-01">9am</time>-<time datetime="2024-09-30">10am</time>
+            </td>
+            <td>Read Code</td>
+        </tr>
+        <tr>
+            <td>
+                <time datetime="2024-09-01">10am</time>-<time datetime="2024-09-30">11am</time>
+            </td>
+            <td>Learn Code</td>
+        </tr>
+        <tr>
+            <td>Other Time</td>
+            <td>Free Time</td>
+        </tr>
+    </table>
 </body>
 
 </html>
